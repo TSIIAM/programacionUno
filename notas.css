@@ -1,0 +1,20 @@
+	body{
+		background-color:lightgreen;
+		
+	}
+
+	form, h1{
+		margin: 0 auto;
+		width:70%;
+		height:70%;
+		background-color:white;
+		box-shadow:1px 1px black;
+		padding:8px 8px;
+		border:1px solid black;
+		}
+		.sin-Terminar{
+		color:red;
+		}
+		table thead  tr th tbody tr  td {
+		border:1px solid black;
+		}

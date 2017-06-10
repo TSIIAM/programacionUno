@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Convertir Temperaturas</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/practico4.css">
+	<meta name="description" content="Junior Web Developer Convertidor de Temperaturas">
+    <meta name="keywords" content="HTML,CSS,JavaScript/jQuery">
+    <meta name="author" content="Alvaro Mesa">
+    
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+	<section class="page">
+	
+	
+		<div class="head">
+			<h1> Convertir Temperaturas</h1>	
+		</div>
+		
+	
+	
+		<h2>Funciones</h2>
+        <h4>Un click en boton  para abrir y cerrar el convertidor.</h4>
+		<!-- ***************************************************************************************************** -->
+        
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 7 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Convertir"> <p> Una funcion que convierta una temperatura origen a  otra temperatura con la unidad correspondiente.</p>
+
+			<article class="ejercicio" >
+			<!-- *******************TABLA DE CONVERSIONES************************************ -->
+			<table class="table table-hover">
+			
+			<thead>
+			<tr>
+				<th>De</th>
+				<th>a</th>
+				<th>Formula</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Fahrenheit</td>
+				<td>Celsius</td>
+				<td>C = (F-32) /1,8</td>
+			</tr>
+			<tr>
+				<td>Celsius</td>
+				<td>Fahrenheit</td>
+				<td>F = (1,8)C + 32</td>
+			</tr>
+			<tr>
+				<td>Fahrenheit</td>
+				<td>Kelvin</td>
+				<td>K = (F+459,67) / 1,8</td>
+			</tr>
+			<tr>
+				<td>Kelvin</td>
+				<td>Fahrenheit</td>
+				<td>F =  9/5*K -459,67</td>
+			</tr>
+			<tr>
+				<td>Fahrenheit</td>
+				<td>Rankine</td>
+				<td>Ra =  F  + 459,67</td>
+			</tr>
+			<tr>
+				<td>Rankine</td>
+				<td>Fahrenheit</td>
+				<td>F = Ra - 459,67</td>
+			</tr>
+			<tr>
+				<td>Fahrenheit</td>
+				<td>Reaumur</td>
+				<td>Re =  ( F - 32 ) /  2,25</td>
+			</tr>
+			<tr>
+				<td>Reaumur</td>
+				<td>Fahrenheit</td>
+				<td>F = (2,25)Re + 32</td>
+			</tr>
+			</tbody>
+			</table>
+            
+ 
+			<select name="selConvertir" id="num7A">
+			<option selected="selected" value="empty">Sel. conversion</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Celsius">Celsius</option>
+				<option value="Kelvin">Kelvin</option>
+				<option value="Rankine">Rankine</option>
+				<option value="Reaumur">Reaumur</option>
+			</select>
+			
+			<select name="selConvertir" id="num7B">
+			<option selected="selected" value="empty">Sel. conversion</option>
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+				<option value="Rankine">Rankine</option>
+				<option value="Reaumur">Reaumur</option>
+			</select>		
+			<label>Temperatura </label>
+			<input type="number"   id="num7C">
+            <input type="button" value="Resultado" id="btn7">
+
+            <div>
+                <p  class="panel panel-default resultado" id="resultado7">Resultado</p>
+            </div>
+			</article>
+        </form>
+		
+			
+			
+			
+			
+			
+			
+			
+			 <!--Ends section-->
+			
+			</section>
+			
+			
+			
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/practico4.js"></script>
+			<script src="../js/funciones4.js"></script>
+            <script src="../js/validar4.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico prueba 2</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/prueba2.css">
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+  <div class="loader"></div>
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Ejercicio de prueba 2 </h1>
+		</div>
+
+
+
+		<h2>Funciones</h2>
+        <h4>Un click en boton de ejercicio para abrir y cerrar el ejercicio.</h4>
+		<!-- ***************************************************************************************************** -->
+        <!--Ejercicio 1 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ingresar "> <p>Escribir el codigo de la funcion aumetarSueldos, que reciba un parametro vecSueldos  y una variable numerica tasa y retorne con cada sueldo contenido en el vector vecSueldos aumentado en el porcentaje recibido en el parametro tasa.</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p> 2)Dado un vector numerico obtener la suma de los valores ubicados en las posiciones multiplo de 3.</p></div>
+			<div class="alert-info"><p> 3) Dado un vector vecTextos que contiene strings y un texto cualquiera, retornar las posicion del primer elemento del vector que contenga ese texto.
+			Por ejemplo : si vecTextos fuera ["Hola","Las casas", "Altura", "Mesa","Altura"] y el texto a buscar fuera "Altura" debera retornar el valor 2,- la primera posicion que contiene "Altura".</p></div>
+			<div class="alert-info"><p> 4)En un vector ventaPorMes se guarda el total de ventas de cada mes de un año.
+			Implementar la funcion agregarVenta que recibe un numero de mes( de 1 a 12) y un monto, e incrementa el total vendido en ese mes sumandole ese monto.
+			Por ejemplo, si el vector ventasPorMes contiene = [1000,500,2800,19000,5000,7500,90000,50000,3600,5400,9900,12000] y nos ingresan el mes 3 y como monto 4000, el tercer valor (2800) debera quedar en 6800.</p></div>
+			
+			
+			<hr>
+			<label  for="in1A" >Sueldos</label>
+			<input type="text"  class="form-control" id="in1A">
+			<input type="button"  class="form-control" value="Ingresar" id="btn1A">
+			<label  for="in1B" >Tasa</label>
+			<input type="text"  class="form-control" id="in1B">
+			<input type="button"  class="form-control" value="Calcular" id="btn1B">
+			<br >
+			
+			<label  for="in2A" >Numeros</label>
+			<input type="text"  class="form-control" id="in2A">
+			<input type="button"  class="form-control" value="Ingresar" id="btn2A">
+			<label  for="in2B" >Posicion multiplo de </label>
+			<input type="text"  class="form-control" id="in2B">
+			<input type="button"  class="form-control" value="Buscar" id="btn2B">
+			<br >
+			
+			<label  for="in3A" >Palabras</label>
+			<input type="text"  class="form-control" id="in3A">
+			<input type="button"  class="form-control" value="Ingresar" id="btn3A">
+			<label  for="in3B" >Buscar</label>
+			<input type="text"  class="form-control" id="in3B">
+			<input type="button"  class="form-control" value="Buscar" id="btn3B">
+			<br >
+			
+			<label  for="in4A" >Mes</label>
+				<select class="form-control" name="Seleccionar Mes" id="in4A">
+				<option selected="selected" value="empty">Sel. Mes</option>
+				<option value="0">Enero</option>
+				<option value="1">Febrero</option>
+				<option value="2">Marzo</option>
+				<option value="3">Abril</option>
+				<option value="4">Mayo</option>
+				<option value="5">Junio</option>
+				<option value="6">Julio</option>
+				<option value="7">Agosto</option>
+				<option value="8">Septiembre</option>
+				<option value="9">Octubre</option>
+				<option value="10">Noviembre</option>
+				<option value="11">Diciembre</option>	
+			</select>
+			<label  for="in4B" >Ventas</label>
+			<input type="text"  class="form-control" id="in4B">
+			<input type="button"  class="form-control" value="Calcular" id="btn4A">
+			<br >
+
+
+            <div class="text-center">
+				<p class="panel panel-default resultado" class="resultado" id="error"></p>
+                <p class="panel panel-default resultado" class="resultado" id="resultado1"></p>
+				<p class="panel panel-default resultado" class="resultado" id="resultado2"></p>
+				<p class="panel panel-default resultado" class="resultado" id="resultado3"></p>
+				<p class="panel panel-default resultado" class="resultado" id="resultado4"></p>
+            </div>
+			</article>
+        </form>
+		
+
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funcionesprueba2.js"></script>
+			<script src="../js/validarprueba2.js"></script>
+            <script src="../js/practicoprueba2.js"></script>
+
+
+
+    </body>
+
+</html>

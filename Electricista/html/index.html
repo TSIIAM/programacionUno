@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Electricista</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/practico4.css">
+	<meta name="description" content="Junior Web Developer Electricista">
+    <meta name="keywords" content="HTML,CSS,JavaScript/jQuery">
+    <meta name="author" content="Alvaro Mesa">
+	
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Programa para Electricista</h1>
+		</div>
+
+
+
+		<h2>Funciones</h2>
+        <h4>Un click en boton  para abrir y cerrar.</h4>
+		<!-- ***************************************************************************************************** -->
+  
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 9 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 9"> <p> Desarrollar una aplicacion que se encargara de armar presupuestos de un electricista, para que este los pueda entregar a los clientes.</p>
+
+			<article class="ejercicio" >
+			<ul>
+			<li>El electrista cobra un valor fijo de $U 200(doscientos pesos) por hora.Si utiliza un asistente, este asistente cobra $U150(ciento cincuenta pesos) por hora y trabaja la misma centidad de horas y dias que el electricista en caso de ser parte del proyecto.</li>
+			<li>Al costo que haya de compra de materiales, el electricista le agrega un %10(diez por ciento) por concepto de compra y traslado de los materiales hasta el lugar de la obra.</li>
+			</ul>
+			<ol>
+			<li>Crear una funcion que reciba como parametro un valor numerico y verifique que sea numero y positivo y devuelva verdadero o falso.Esta funcion se puede utilizar para validad ingresos de horas y cantidad de dias.</li>
+			<li>Crear una funcion que reciba como parametro  el tipo de usuario (electricista o asistente), la cantidad de horas y la cantidad de dias y calcule el costo total de salario de esa persona para el proyecto y lo devuelva.</li>
+			<li>Crear una funcion que reciba el costo de materiales, calcule el costo total final de los materiales incluidos los traslados y devuelva el total final.</li>
+
+			</ol>
+
+			<p>La aplicacion se debera encargar de pedir el ingreso de cantidad de dias que el electricista va a trabajar, la cantidad de horas por dia que va a trabajar, si va a utilizar un asistente o no y el costo de materiales en la obra.</p>
+			<p>En base a esos ingresos y las funciones creadas se debe imprimir en pantalla el total final del presupuesto </p>
+			<hr>
+
+			<div class="text-center">
+				<label>Cantidad de dias </label>
+			<input type="number"  class="form-control" id="num9A">
+			<br />
+				<label>Cantidad de  horas </label>
+			<input type="number"  class="form-control" id="num9B">
+			<br />
+            <label>Costo de materiales </label>
+			<input type="number input" class="form-control"  id="num9C">
+			<br />
+				<select name="selConvertir" class="form-control" id="num8D">
+			<option selected="selected"   value="empty">Sel. empleados</option>
+				<option value="Electricista">Solo Electricista</option>
+				<option value="Asistente">Con Asistente</option>
+			</select>
+            <br />
+            <input type="button" value="Resultado" class="form-control"  id="btn9">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado9">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+
+
+
+
+
+
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funciones4.js"></script>
+			<script src="../js/validar4.js"></script>
+            <script src="../js/practico4.js"></script>
+
+
+
+    </body>
+
+</html>

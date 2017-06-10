@@ -1,0 +1,152 @@
+ body {
+            width: 88%;
+            margin: 0 auto;
+			background-color:purple;
+			transition:2s;
+        }
+        .page{
+		font-size:16px;
+		border:1px solid black;
+		width:99%;
+		margin: 0 auto;
+			background-color:white;
+			box-shadow:15px 15px black;
+			margin-left:10px;
+		}
+		.head{
+		background-color:black;
+		color:white;
+		margin-top:-20px;
+		margin-bottom:20px;
+
+		}
+        h1, h2,h4 {
+            text-align: center;
+        }
+		h1,h2{
+			font-family:cursive;
+		}
+        h4{
+			font-family:verdana;
+
+		}
+        form {
+			margin: 5px 5px;
+            padding: 10px 10px;
+            border: 1px solid black;
+        }
+
+
+
+		div p{
+			overflow-x:auto;
+		}
+		.ejerbtn +p {
+			font-family:Georgia;
+
+
+		}
+		.resultado{
+			transition:1s ;
+
+		}
+
+		.ejer:nth-child(4){
+			margin-top:25px;
+		}
+
+
+		.ejerbtn{
+			background-color:#0da;
+			border:1px solid black;
+			color:black;
+			font-weight:bold;
+			box-shadow:2px 2px black;
+			position:relative;
+			float:right;
+			margin-right: 5px;
+
+		}
+		
+		.ejerbtn:hover{
+			background-color:#05ffbc;
+			font-family:Georgia;
+			top:-2px;
+			left:2px;
+			font-size:1em;
+		}
+		
+		.cerrar{
+			float:left;
+			margin-right: 15px;
+			
+		}
+
+
+	
+		.loader {
+		position:fixed;
+    top:0px;
+    left:0px;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #020887; /* Blue */
+    border-right: 5px solid #7CA5B8; /* Blue */
+    border-bottom: 5px solid #A9DBB8; /* Blue */
+    border-left: 5px solid #C6EBBE; /* Blue */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin2 1.8s linear infinite;
+	margin-left:-2px;
+}
+@keyframes spin2 {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+		input[value="Resultado"]{
+			color:black;
+			background-color:#0da;
+			font-weight:bold;
+			border-radius:15px;
+			box-shadow:2px 2px black;
+			margin-bottom:10px;
+			font-family:sans-serif;
+			}
+			input[value="Resultado"]:hover{
+			border:1px solid black;
+			}
+
+			input[type="text"]{
+				border:1px solid black;
+				margin-bottom:10px;
+			}
+			input[type="text"]:hover{
+			border:1px solid #0da;
+			box-shadow:2px 2px black;
+			}
+
+		ul li{
+			list-style:none;
+		}
+
+
+		.alert{
+		color:red;
+		}
+		.correcto{
+		color:green;
+		font-family:georgia;
+		font-weight:bold;
+		font-size:1em;
+		}
+
+		table {border-collapse: collapse;}
+		table, td {border:2px solid black;}
+
+		.importante{
+			font-family:georgia;
+			font-weight:bold;
+			letter-spacing:5px;
+
+		}

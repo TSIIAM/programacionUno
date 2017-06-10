@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico 7</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/practico7.css">
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+  			<div class="loader"></div>
+			<div class="loader2"></div>
+			<div class="loader3"></div>
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Ejercicios de Practico 7</h1>
+
+			<div id="tempo"></div>
+		</div>
+
+	
+
+		<h2>Objetos |Array asociativos</h2>
+        <h4>Un click en boton de ejercicio para abrir y cerrar el ejercicio.</h4>
+		
+		<!-- ***************************************************************************************************** -->
+        <!--Ejercicio 1 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 1"> <p>Crear la interfaz y la  funcionalidad para almacenar datos  de personas(nombre,edad,nacionalidad).</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>Crear un botón que al ser presionado  arme una tabla  con todos los datos  de personas disponibles.</p></div>
+			<div class="alert-info"><p>Crear otro botón  que arme una  nueva tabla con todos los  datos de las personas  mayores de edad.</p></div>
+			
+			<hr>
+			<label  for="in1A" >Nombre</label>
+			<input type="text"  class="form-control" id="in1A">
+			<br >
+			<label  for="in1B" >Edad</label>
+			<input type="number"  class="form-control" id="in1B">
+			<br >
+			<label  for="in1C" >Nacionalidad</label>
+			<input type="text"  class="form-control" id="in1C">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn1a">
+			<input type="button"  class="form-control" value="Todos Usuarios" id="btn1b">
+			<input type="button"  class="form-control" value="Usuarios Mayores" id="btn1c">
+			
+			
+            <div class="text-center">
+				<p class="panel panel-default error" id="error1"></p>
+                <p class="panel panel-default resultado"  id="resultado1A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		    <!--Ejercicio 2 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 2"> <p>Un  cine nos pide crear una aplicación para almacenar  películas. De cada  película  se quiere guardar el nombre(texto), el año (numero), el género(comedia,drama o ciencia ficción), la cantidad de votantes (número) y el total  de puntos totales recibidos(número).</p>
+			<article class="ejercicio" >
+			<div class="alert-info" id="info2"> </div>
+
+			<hr>
+			<label  for="in2A" >Pelicula</label>
+			<input type="text"  class="form-control" id="in2A">
+			<br >
+			<label  for="in2A" >Año</label>
+			<input type="text"  class="form-control" id="in2B">
+			<br >
+			<label  for="in2C" >Genero</label>
+				<select class="form-control" name="selConvertir" id="in2C">
+				<option selected="selected" value="empty">Sel. Genero</option>
+				<option value="Comedia">Comedia</option>
+				<option value="Drama">Drama</option>
+				<option value="Ciencia">Ciencia Ficcion</option>
+				<option value="Terror">Terror</option>
+				<option value="Documental">Documental</option>
+				
+			</select>
+			<br >
+			<label  for="in2A" >Cantidad de Votantes</label>
+			<input type="text"  class="form-control" id="in2D">
+			<br >
+			<label  for="in2A" >Total de Puntos</label>
+			<input type="text"  class="form-control" id="in2E">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn2a">
+			<input type="button"  class="form-control" value="Ver" id="btn2b">
+			<input type="button"  class="form-control" value="Promedio" id="btn2c">
+
+            <div class="text-center" id="resultados2">
+				<p class="panel panel-default error" id="error2"></p>
+                <p class="panel panel-default resultado"  id="resultado2A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		  <!--Ejercicio 3 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 3"> <p>En un local de venta de guitarras se venden  tres tipos de guitarras: clásicas, electricas y electroacústicas.
+			De cada tipo existe un único  modelo.Se solicita generar una aplicación para la gestion  de ventas de productos.</p>
+			<article class="ejercicio" >
+					
+					<div class="alert-info" id="info3"> </div>
+					<div class="alert-info" id="info3B">Precios: Clasica 300, Electrica 450, Electroacusticas 500. </div>
+
+			<hr>
+			<label  for="in3A" >Guitarra</label>
+				<select class="form-control" name="Seleccionar Tipo" id="in3A">
+				<option selected="selected" value="empty">Sel. Tipo</option>
+				<option value="0">Clásicas</option>
+				<option value="1">Electricas</option>
+				<option value="2">Electroacústicas</option>	
+			</select>
+
+				<label  for="in3B" >Cantidad</label>
+			<input type="number"  class="form-control" id="in3B">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn3a">
+			<input type="button"  class="form-control" value="Mostrar" id="btn3b">
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error3"></p>
+                <p class="panel panel-default resultado"  id="resultado3A"></p>
+				
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		  <!--Ejercicio 4 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 4"> <p>Una empresa de venta de celulares  quiere  llevar registro  de sus ventas. Para cada venta  se ingresa marca(Samsung, Sony o LG), modelo(texto), precio(numero) y cantidad de unidades(número).</p>
+			<article class="ejercicio" >
+			
+			<div class="alert-info" id="info4"> </div>
+			<hr>
+		
+			
+			<label  for="in4A" >Marca</label>
+				<select class="form-control" name="Seleccionar Marca" id="in4A">
+				<option selected="selected" value="empty">Sel. Marca</option>
+				<option value="0">Samsung</option>
+				<option value="1">Sony</option>
+				<option value="2">LG</option>
+				<option value="3">Iphone</option>
+			</select>
+			<br >
+			
+			<label  for="in4B" >Modelo</label>
+			<input type="text"  class="form-control" id="in4B">
+			<br >
+			
+			<label  for="in4C" >Precio</label>
+			<input type="number"  class="form-control" id="in4C">
+			<br >
+			
+			<label  for="in4D" >Cantidad</label>
+			<input type="number"  class="form-control" id="in4D">
+			<br >
+			
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn4a">
+			<input type="button"  class="form-control" value="Mostrar Todos" id="btn4b">
+			<input type="button"  class="form-control" value="Filtrar" id="btn4c">
+			    <div class="text-center">
+				<p class="panel panel-default error" id="error4"></p>
+                <p class="panel panel-default resultado"  id="resultado4A"></p>
+				
+            </div>
+			
+			
+			<label  for="in4E" class="in4E"  >Buscar Modelo</label>
+			<input type="text"  class="form-control" id="in4E">
+			<br >
+			<input type="button"  class="form-control" value="Buscar"  class="in4E" id="btn4d">
+			<p class="panel panel-default resultado"  id="resultado4B"></p>
+
+        
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		 <!--Ejercicio 5 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 5"> <p>Crear una interfaz HTML(solamente el contenido de dentro  del body) con todos los elementos necesarios para solicitar  datos de zapatos. 
+			De cada zapato se debe solicitar marca, talle, color y si es nacional o importado.</p>
+			<article class="ejercicio" >
+			
+			<div class="alert-info" id="info5"> </div>
+
+			<hr>
+			<label  for="in5A" >Marca</label>
+			<input type="text"  class="form-control" id="in5A">
+			<br >
+			
+			<label  for="in5B" >Talle</label>
+			<input type="number"  class="form-control" id="in5B">
+			<br >
+			
+			<label  for="in5C" >Color</label>
+			<input type="text"  class="form-control" id="in5C">
+			<br >
+			
+			<label  for="in5D" >Origen</label>
+				<select class="form-control" name="Seleccionar Origen" id="in5D">
+				<option selected="selected" value="empty">Sel. Origen</option>
+				<option value="0">Nacional</option>
+				<option value="1">Importado</option>
+			</select>
+			<br >
+			
+			
+			
+			
+			<input type="button"  class="form-control" value="Ingresar" id="btn5a">
+			<input type="button"  class="form-control" value="Ver" id="btn5b">
+			
+			 <div class="text-center">
+				<p class="panel panel-default error" id="error5"></p>
+                <p class="panel panel-default resultado"  id="resultado5A"></p>
+				
+            </div>
+			<input type="button"  class="form-control" value="Filtrar" id="btn5c">
+			<label  for="in5E" >Origen</label>
+				<select class="form-control" name="Seleccionar Origen" id="in5E">
+				<option selected="selected" value="empty">Sel. Origen</option>
+				<option value="0">Nacional</option>
+				<option value="1">Importado</option>
+			</select>
+			<br >
+			<input type="button"  class="form-control" value="Informe" id="btn5d">
+			<p class="panel panel-default resultado"  id="resultado5B"></p>
+			
+           
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		 <!--Ejercicio Extra 1-->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio EX1"> <p>Dada una pagina HTML que contiene un elemento "contenido", escriba una funcion en javascript que dibuje un formulario dentro del elemento en el momento de ser cargada la pagina.</p>
+			<article class="ejercicio" >
+			
+				<div class="alert-info" id="info5"> </div>
+
+				<hr>
+				<div id="contenido">
+				
+				
+					
+						
+				</div>
+				
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		
+		
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funciones7.js"></script>
+			<script src="../js/validar7.js"></script>
+            <script src="../js/practico7.js"></script>
+
+
+
+    </body>
+
+</html>

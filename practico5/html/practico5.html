@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico 5</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/practico5.css">
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+  <div class="loader"></div>
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Ejercicios de Practico 5</h1>
+		</div>
+
+
+
+		<h2>Strings</h2>
+        <h4>Un click en boton de ejercicio para abrir y cerrar el ejercicio.</h4>
+		<!-- ***************************************************************************************************** -->
+        <!--Ejercicio 1 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 1"> <p>Solicitar un texto en pantalla y luego mostrarlo en forma invertida.</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>Ejemplo, si contiene:"hola mundo", obtener "odnum aloh"</p></div>
+
+			<hr>
+			<label for="in1A" >Texto</label>
+			<input type="text"  class="form-control" id="in1A">
+			<br >
+
+            <input type="button"  class="form-control" value="Resultado" id="btn1">
+
+
+            <div class="text-center">
+                <p class="panel panel-default resultado" class="resultado" id="resultado1">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 2 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 2"> <p> Solicitar un texto y una letra e indicar cuantas veces aparece esa letra en el texto ingresado.
+			</p>
+
+			<article class="ejercicio" >
+			<hr>
+            <label for="in2A" >Texto </label>
+			<input type="text" class="form-control" id="in2A">
+			<br >
+			<label for="in2B" >Letra </label>
+			<input type="text" class="form-control" id="in2B">
+			<br>
+            <input type="button"  class="form-control" value="Resultado" id="btn2">
+
+
+            <div class="text-center">
+                <p class="panel panel-default resultado" id="resultado2">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 3 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 3"> <p> Solicitar un texto e indicar cuantas vocales presenta.</p>
+
+			<article class="ejercicio" >
+			<hr>
+            <label for="in3A" >texto </label>
+			<input type="text" class="form-control" id="in3A">
+            <input type="button"  class="form-control" value="Resultado" id="btn3">
+
+            <div  class="text-center">
+                <p  class="panel panel-default resultado" id="resultado3">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 4 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 4"> <p> Ingresar un texto y al presionar un botón convertirlo a minúsculas y mostrarlo en un párrafo.</p>
+
+			<article class="ejercicio" >
+			<hr>
+            <label for="in4A">Texto </label>
+			<input type="text" class="form-control"  id="in4A">
+            <input type="button" class="form-control" value="Resultado" id="btn4">
+
+            <div class="text-center">
+                <p  class="panel panel-default resultado" id="resultado4">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 5 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 5"> <p> Ingresar un texto y al presionar un botón convertirlo a mayúsculas y mostrarlo en un párrafo.</p>
+
+			<article class="ejercicio" >
+			<hr>
+
+            <label for="in5A" >Texto </label>
+			<input type="text" class="form-control"  id="in5A">
+            <input type="button"  class="form-control" value="Resultado" id="btn5">
+
+            <div class="text-center">
+                <p  class="panel panel-default resultado" id="resultado5">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 6 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 6"> <p>Ingresar un texto y al presionar un botón convertir todo el texto a minúsculas y solo la primera letra de la primera palabra a mayúsculas.</p>
+
+			<article class="ejercicio" >
+			<hr>
+            <label for="in6A">Texto </label>
+			<input type="text" class="form-control" id="in6A">
+            <input type="button" class="form-control" value="Resultado" id="btn6">
+
+            <div class="text-center">
+                <p  class="panel panel-default resultado" id="resultado6">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 7 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 7"> <p> Ingresar dos textos y verificar si el segundo es una subcadena del primero.</p>
+
+			<article class="ejercicio" >
+			<label for="in7A">Texto 1 </label>
+			<input type="text" class="form-control"  id="in7A">
+			<br />
+			<label for="in7B">Texto 2 </label>
+			<input type="text" class="form-control"  id="in7B">
+
+            <input type="button"  class="form-control" value="Resultado" id="btn7">
+
+            <div class="text-center" >
+                <p  class="panel panel-default resultado" id="resultado7">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 8 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 8"> <p>Dado un texto contar la cantidad de palabras que contiene.
+Para separar en esta estapa consideraremos como separador de palabras únicamente los espacios en blanco.</p>
+
+			<article class="ejercicio" >
+			<hr>
+			<label for="in8A">Texto </label>
+			<input type="text" class="form-control" id="in8A">
+
+            <input type="button" class="form-control" value="Resultado" id="btn8">
+
+
+
+            <div class="text-center">
+                <p  class="panel panel-default resultado" id="resultado8">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 9 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 9"> <p> Dado un texto indicar si comienza y termina con la misma letra.</p>
+
+			<article class="ejercicio" >
+			<hr>
+
+			<div class="text-center">
+			<label for="in9A">Cantidad de dias </label>
+			<input type="text"  class="form-control" id="in9A">
+            <input type="button" value="Resultado" class="form-control"  id="btn9">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado9">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+			<!--Ejercicio 10 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 10"> <p> Sabiendo que la primera letra de una matrícula indica el departamento al que pertenece el vehículo.
+			Ingresar una matrícula(formato:AAA-1111) e informar a que departamento pertenece ese vehiculo.</p>
+
+			<article class="ejercicio" >
+			<hr>
+				<ul>
+				<li>A-Canelones</li>
+				<li>B-Maldonado</li>
+				<li>C-Rocha</li>
+				<li>D-Treinta y Tres</li>
+				<li>E-Cerro Largo</li>
+				<li>F-Rivera</li>
+				<li>G-Artigas</li>
+				<li>H-Salto</li>
+				<li>I-Paysandu</li>
+				<li>J-Rio Negro</li>
+				<li>K-Soriano</li>
+				<li>L-Colonia</li>
+				<li>N-San Jose</li>
+				<li>O-Flores</li>
+				<li>P-Lavalleja</li>
+				<li>Q-Durazno</li>
+				<li>R-Tacuarembo</li>
+				<li>S-Montevideo</li>
+
+				</ul>
+			<div class="text-center">
+			<label for="in10A">Cantidad de dias </label>
+			<input type="text"  class="form-control" id="in10A">
+            <input type="button" value="Resultado" minlength="7"  class="form-control"  id="btn10">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado10">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+				<!--Ejercicio 11 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 11"><p> Hacer un programa que ingrese una cadena de caracteres y determine el número de mayúsculas y el número de minúsculas.</p>
+
+			<article class="ejercicio" >
+			<p>Se deberán eliminar los espacios en blanco antes de hacer el cálculo y se puede considerar cualquier caracter que no sea a-z o A-Z como mayúscula o minúscula.</p>
+			<p>En caso de generar una solución más compleja se puede consultar la siguiente tabla.</p>
+			
+			<hr>
+			<div class="text-center">
+			<img  class=" container img-responsive" src="../css/tablaAscii.png" />
+			<label for="in11A">Texto </label>
+			<input type="text"  class="form-control" id="in11A">
+            <input type="button" value="Resultado" class="form-control"  id="btn11">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado11">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+				<!--Ejercicio 12 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 12"> <p> Dado un texto Indicar si es un palíndromo.Tener en cuenta que no se tienen en cuenta los espacios en blanco.</p>
+
+			<article class="ejercicio" >
+			<p>Ej:"Amargor pleno con el programa", "Ana lleva al oso la avellana"</p>
+			<p>También se consideran palíndromos los textos en los que no coinciden los acentos o las puntuaciones.</p>
+			<p>Ej: "Dabale arroz a la zorra el abad", "Saco sal, ayo, del yodo y le doy a las ocas".</p>
+			<hr>
+			<div class="alert-info"><p>Un palindromo ( del grio palin dromein, volver a ir hacia atrás) es una palabra, número o frase que se lee igual hacia adelante que hacia atrás.Si se trata de un número, se llama capicúa.</p></div>
+			<div class="text-center">
+			<label for="in12A">Texto </label>
+			<input type="text"  class="form-control" id="in12A">
+            <input type="button" value="Resultado" class="form-control"  id="btn12">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado12">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+					<!--Ejercicio 13 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 13"> <p> Dado un texto y una letra mostrar el texto ingresado, remplazando la letra indicada por "*".
+			Por ejemplo si se ingresa el texto "tres tristes tigres comen trigo en un trigal" y como la letra se ingresa "r", lo que se debe mostrar es: "t*es t*istes tig*es comen t*igo en un t*igal".</p>
+
+			<article class="ejercicio" >
+			<hr>
+			<div class="text-center">
+			<label for="in13A">Texto </label>
+			<input type="text"  class="form-control" id="in13A">
+			<br />
+			<label for="in13B">Letra </label>
+			<input type="text"  class="form-control" id="in13B">
+            <input type="button" value="Resultado" class="form-control"  id="btn13">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado13">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+								<!--Ejercicio 14 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 14"> <p> Crear una función que reciba como parámetro un texto y devuelva la posición en la que se encuentra la penúltima ocurrencia de la letra "a" dentro de ese texto.
+			En caso de que haya una sola "a" o no haya ninguna, devolver -1.</p>
+
+			<article class="ejercicio" >
+			<p>Ej: Para la palabra autoabastecimiento se debe devolver un 4 que es la posición de la penúltima "a".</p>
+			<hr>
+			<div class="text-center">
+			<label for="in14A">Texto </label>
+			<input type="text"  class="form-control" id="in14A">
+            <input type="button" value="Resultado" class="form-control"  id="btn14">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado14">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+										<!--Ejercicio 15 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 15"> <p> Escribir una función que reciba como parámetro una palabra y devuelva la cantidad de veces que se aparece la primera letra de esa palabra en toda la palabra.</p>
+
+			<article class="ejercicio" >
+			<p>Ej: Para la palabra "aumentativo" se deve devolver un 2.</p>
+			<p>Ej: Para la palabra "comunicaciones" se deve devolver un 3.</p>
+			<hr>
+			<div class="text-center">
+			<label for="in15A">Texto </label>
+			<input type="text"  class="form-control" id="in15A">
+            <input type="button" value="Resultado" class="form-control"  id="btn15">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado15">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+											<!--Ejercicio 16 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 16"> <p>Ingresar una cédula de identidad uruguaya en un campo de texto con formato 4 111 111(sin digito verificador).
+<br>
+Utilizando el algoritmo de cálculo del dígito verificador ( el posterior a la barra), verificar si la ingresada es una cédula válida.</p>
+
+			<article class="ejercicio" >
+			<p>Se toman los primeros siete numeros y se multiplican cada uno(respetando el lugar, es decir: primero por primero, segundo por segundo) por 2987634.</p>
+			<p>Si la cedula es 1.234.567 la cuenta quedaría así:
+			<br>
+			1x2 + 2x9 + 3x8 + 4x7 + 5x6 + 6x3 + 7x4 = 148</p>
+			<p>Se toma el resultado y se le busca el numero mayor que termina en 0 y se le resta.Ej:150-148=2.</p>
+			<p>El número 2 es el dígito verificador para la cedula 1234567</p>
+			<div class="alert-info"><p>Ingrese la cedula  sin digito verificador</p></div>
+			<hr>
+			<div class="text-center">
+			<label for="in16A">Cedula </label>
+			<input type="text"  class="form-control" id="in16A">
+            <input type="button" value="Resultado" class="form-control"  id="btn16">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado16">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+														<!--Ejercicio 17 -->
+		<form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 17"> <p>Crear un campo de texto para ingresar un valor y verificar si valida con el algoritmo de Luhn.</p>
+
+			<article class="ejercicio" >
+			<p>El <b> algoritmo de Luhn o fórmula de Luhn </b>, tambien conocida como "algoritmo de módulo 10", es una fórmula de suma de verificación, utilizada para validar una diversidad de números de identificación; como números de tarjetas de crédito, números IMEI,etc.</p>
+			<p>La fórmula verifica un número contra su digito de chequeo incluido, el cual usualmente agregado a un número de cuenta parcial para generar el número completo.Este número de cuenta debe pasar la siguiente prueba:</p>
+
+			<ol>
+			<li>A partir del dígito de chequeo incluido, el cual está a la derecha de todo el número, ir de derecha a izquierda duplicando cada segundo dígito.</li>
+			<li>Sumar los digitos del resultado:(ejemplo: 10 = 1+0 = 1,14 = 1+4 = 5) juntos con los digitos sin duplicar del numero original.</li>
+			<li>Si el total de modulo 10 es igual a 0(si el total termina en cero), entonces el número es valido de acuerdo con la fórmula Luhn, de lo contrario no es válido.</li>
+			</ol>
+
+			<p>Supongamos un ejemplo de un numero de cuenta "7992739871", que contará con un digito de control adicional, por lo que es de la forma 799273981x:</p>
+			<hr>
+			<table class="table">
+			<thead>
+			<tr>
+				<td>Digitos del numero de cuenta</td>
+				<td>7</td>
+				<td>9</td>
+				<td>9</td>
+				<td>2</td>
+				<td>7</td>
+				<td>3</td>
+				<td>9</td>
+				<td>8</td>
+				<td>7</td>
+				<td>1</td>
+				<td>x</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Duplicar cada siguiente</td>
+				<td>7</td>
+				<td>18</td>
+				<td>9</td>
+				<td>4</td>
+				<td>7</td>
+				<td>6</td>
+				<td>9</td>
+				<td>16</td>
+				<td>7</td>
+				<td>2</td>
+				<td>x</td>
+			</tr>
+			<tr>
+				<td>Sumar los digitos</td>
+				<td>7</td>
+				<td>9</td>
+				<td>9</td>
+				<td>4</td>
+				<td>7</td>
+				<td>6</td>
+				<td>9</td>
+				<td>7</td>
+				<td>7</td>
+				<td>2</td>
+				<td>=67</td>
+			</tr>
+
+			</tbody>
+
+			</table>
+
+			<p> El digito de chequeo (x) se obtiene entonces de (67 * 9 mod 10).En términos sencillos:</p>
+			<ol>
+			<li>Calcular la suma de los digitos (67).</li>
+			<li>Multiplicar por 9(603).</li>
+			<li>Tomar el ultimo digito (3).</li>
+			<li>El resultado es el digito de chequeo.</li>
+			</ol>
+
+
+			<div class="text-center">
+			<label for="in17A">Codigo </label>
+			<input type="text"  class="form-control" id="in17A">
+            <input type="button" value="Resultado" class="form-control"  id="btn17">
+			</div>
+            <div class="text-center">
+                <p  class="panel panel-default resultado " id="resultado17">Resultado</p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funciones5.js"></script>
+			<script src="../js/validar5.js"></script>
+            <script src="../js/practico5.js"></script>
+
+
+
+    </body>
+
+</html>

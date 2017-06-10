@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico 2</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+			background-color:orange;
+
+        }
+        .page{
+		font-size:16px;
+		border:1px solid black;
+		width:80%;
+		margin: 0 auto;
+			background-color:white;
+			box-shadow:15px 15px black;
+		}
+		.head{
+		background-color:black;
+		color:white;
+		height:50px;
+		margin-top:-20px;
+
+
+		}
+        h1 {
+            text-align: center;
+        }
+
+        form {
+			margin: 5px 5px;
+            padding: 10px 10px;
+            border: 1px solid black;
+        }
+
+        .sin-Terminar {
+            color: red;
+
+
+        }
+		li{
+		list-style-type:none;
+		}
+
+		code{
+		background-color:#ccc;
+		color:black;
+		font-family:georgia;
+		border:1px solid black;
+		}
+
+		#resultado18b{
+		display:none;
+		}
+		#resultado19b{
+		display:none;
+		}
+
+		.alert{
+		color:red;
+		}
+		.correcto{
+		color:green;
+		font-family:georgia;
+		font-weight:bold;
+		font-size:2em;
+		}
+    .input{
+     width: 200px;
+    }
+
+		table {border-collapse: collapse;}
+table, td {border:1px solid black;}
+		.tateti{
+		margin: 0 auto;
+		text-align:center;
+		}
+
+
+    </style>
+
+    <body>
+	<section class="page">
+
+
+	<div class="head">
+<h1> Ejercicios de Practico 2 </h1>
+</div>
+
+
+
+        <!--Ejercicio 1 -->
+        <form>
+            <p> <b> Ejercicio 1:</b> Ingresar un numero si es positivo o negativo</p>
+
+			<hr>
+            <label>Numero Positivo o Negativo </label>
+            <input type="number" max="100" placeholder="numero" id="num1">
+            <input type="button" value="Resultado" id="btn1">
+
+            <div>
+                <p id="resultado1">Resultado</p>
+            </div>
+        </form>
+        <!--Ejercicio 2 -->
+        <form>
+            <p> <b>Ejercicio 2:</b> Ingresar un numero y dar aviso, si el numero es mayor a 10 mostrar un aviso, mayor que diez</p>
+
+			<hr>
+            <label>Numero es mayor a diez? </label>
+            <input type="number" placeholder="numero" id="num2">
+            <input type="button" value="Resultado" id="btn2">
+
+            <div>
+                <p id="resultado2">Resultado</p>
+            </div>
+        </form>
+
+
+        <!--                  Ejercicio 3                          -->
+        <form>
+            <p> <b>Ejercicio 3:</b> Ingresar un numero y presionar un buton, al presionar el boton, si el numero es mayor que 20 mostrar es mayor que 20, sino mostrar es menor o igual a 20</p>
+
+			<hr>
+            <label>Numero es mayor a veinte? </label>
+            <input type="number" placeholder="numero" id="num3">
+            <input type="button" value="Resultado" id="btn3">
+
+            <div>
+                <p id="resultado3">Resultado</p>
+            </div>
+        </form>
+
+        <!--                  Ejercicio 4                          -->
+        <form>
+            <p> <b>Ejercicio 4:</b> Ingresar un numero, en caso que sea negativo, convertirlo a positivo, mostrar el numero en un parrafo.</p>
+
+			<hr>
+            <label>Numero es Positivo? </label>
+            <input type="number" placeholder="numero" id="num4">
+            <input type="button" value="Resultado" id="btn4">
+
+            <div>
+                <p id="resultado4">Resultado</p>
+            </div>
+        </form>
+
+
+        <!--                  Ejercicio 5                          -->
+        <form>
+            <p> <b>Ejercicio 5:</b> Ingresar un numero y mostrar si es mayor que 10 y menor que 20 o no.</p>
+
+			<hr>
+            <label>Numero mayor o menor a 10 o 20</label>
+            <input type="number" placeholder="numero" id="num5">
+            <input type="button" value="Resultado" id="btn5">
+
+            <div>
+                <p id="resultado5">Resultado</p>
+            </div>
+        </form>
+
+        <!--                  Ejercicio 6                       -->
+        <form>
+            <p> <b>Ejercicio 6:</b> Ingresar un numero e informar si es multiplo de 7 y de 3 simultaneamente.</p>
+
+			<hr>
+            <label>Numero es divisible entre 7 y 3 ?</label>
+            <input type="number" placeholder="numero" id="num6">
+            <input type="button" value="Resultado" id="btn6">
+
+            <div>
+                <p id="resultado6">Resultado</p>
+            </div>
+        </form>
+
+        <!--                  Ejercicio 7                       -->
+        <form>
+            <p> <b>Ejercicio 7:</b> Ingresar numero y mostrar si es menor que -20 o mayor que 20, indicando con un aviso "CUMPLE" para cualquiera de los dos casos o "NO CUMPLE" en caso que este en el rango de menos veinge a veinte .</p>
+
+			<hr>
+            <label>Numero menor -20 o mayor 20 ?</label>
+            <input type="number" placeholder="numero" id="num7">
+            <input type="button" value="Resultado" id="btn7">
+
+            <div>
+                <p id="resultado7">Resultado</p>
+            </div>
+
+        </form>
+
+        <!--                  Ejercicio 8                       -->
+        <form>
+            <p> <b>Ejercicio 8:</b> Ingresar un número y presionar un botón, al presionar el botón, si el numero es mayor que 30 mostrar "es mayor que treinta" sino si es menor que 10 mostrar "es menor que 10", sino mostrar "entre diez y treinta" .</p>
+
+			<hr>
+            <label>Numero menor a 10 o mayor a 30 ?</label>
+            <input type="number" placeholder="numero" id="num8">
+            <input type="button" value="Resultado" id="btn8">
+
+            <div>
+                <p id="resultado8">Resultado</p>
+            </div>
+
+        </form>
+
+        <!--                  Ejercicio 9                      -->
+        <form>
+            <p> <b>Ejercicio 9:</b> Se solicita una aplicacion que ayude al usuario a la toma de decisionas al momento de salir de su casa. Los dias domingo el usuario no trabaja, el resto de los dias si. Si la temperatura está por debajo de los 10 grados
+                al usuario debe "abrigarse mucho", si la temperatura está por encima de los 20 grades el usuario deberá "ponerse ropa cómoda" y para casos intermedios usará " abrigo moderado".
+            </p>
+
+            <p>Se ingresa la temperatura y el día de la semana y la aplicación deberá mostrar la salida. A la salida se le incorporará para todos los casos la introducción de levantarse:
+            </p>
+
+            <p>
+                Ejemplos de salida:
+            </p>
+            <p>
+                <br />
+                <b> Ejemplo 1: </b>
+                <br /> Levantarse
+                <br /> Ponerse ropa cómoda
+                <br /> Quedarse en casa, hoy no trabaja.
+            </p>
+
+            <p>
+                <br />
+                <b> Ejemplo 2: </b>
+                <br /> Levantarse
+                <br /> Abrigarse Mucho
+                <br /> Ir al trabajo
+            </p>
+
+			<hr>
+            <label>Que día es?</label>
+            <input type="text" placeholder="Día" id="num9a">
+
+            <label>Que Temperatura?</label>
+            <input type="number" placeholder="grados" id="num9b">
+            <input type="button" value="Resultado" id="btn9">
+
+            <div>
+                <p id="resultado9">Resultado</p>
+            </div>
+  </form>
+
+
+            <!--                  Ejercicio 10                     -->
+            <form>
+                <p> <b>Ejercicio 10:</b> Se ingresan las notas de examen de un grupo de estudiantes. Luego de finalizado el ingreso mostrar cuantos perdieron (menor 70 ), cuantos salvaron, y cuantos sacaron una muy buena nota(>90). A su vez indicar cual fue
+                    es el promedio de notas, cual fue la nota máxima y cuál fue la nota mínima.</p>
+				<hr>
+                <label>Ingresar la nota </label>
+                <input type="number" min="1" max="100" placeholder=" 1 a 100" id="num10">
+                <input type="button" value="Ingresar" id="btn10a">
+                <input type="button" value="Resultados" id="btn10b">
+
+                <div>
+                    <p id="resultado10">Resultado</p>
+                    <hr />
+                    <p> <b> Las Notas son </b> <span id="resultado10a">  </span> </p>
+                    <p> <b> Cantidad de resultados </b> <span id="resultado10b">  </span> </p>
+                    <p> <b>El Promedio  es </b> <span id="resultado10c">  </span> </p>
+                    <hr />
+                    <p> <b>Muy buena nota </b> <span id="resultado10d">  </span> </p>
+                    <p> <b>Aprueban </b> <span id="resultado10e">  </span> </p>
+                    <p> <b>Reprueban </b> <span id="resultado10f">  </span> </p>
+                    <hr />
+                    <p> <b>La Maxima nota es </b> <span id="resultado10g">  </span> </p>
+                    <p> <b>La Minima nota  es </b> <span id="resultado10h">  </span> </p>
+                </div>
+
+
+            </form>
+
+            <!--                  Ejercicio 11                       -->
+            <form>
+                <p >  <b>Ejercicio 11:</b> Se van ingresando los sueldos de los empleados de una empresa y se quiere:
+                    <br /> 1.Obtener el total de los sueldos a pagar.
+                    <br /> 2.Saber cuantos empleados cobraran este mes.
+                    <br /> 3.Mostrar el valor del sueldo más bajo.</p>
+
+				<hr>
+                <label>Ingresar  sueldos </label>
+                <input type="number" placeholder="numero" id="num11">
+                <input type="button" value="Resultado" id="btn11">
+
+
+                    <p id="resultado11a">El sueldo Total del Mes</p>
+
+                    <p id="resultado11b">Cantidad de sueldos a pagar </p>
+
+                    <p id="resultado11c">El sueldo más bajo </p>
+					<p id="resultado11d">Sueldos a pagar </p>
+					<p id="resultado11e">Descuentos </p>
+
+            </form>
+
+
+            <!--                  Ejercicio 12                       -->
+            <form>
+                <p> <b>Ejercicio 12:</b> Ingresar dos números y presionar un botón, al presionar el botón, si el primero es mayor que el segundo restar al primero el segundo, sino restar al segundo el primero y para cualquier caso mostrar
+                    el resultado. </p>
+
+				<hr>
+                <label>Ingresar 2 numeros para restar </label>
+                <input type="number" placeholder="numero" id="num12a">
+                <input type="number" placeholder="numero" id="num12b">
+                <input type="button" value="Resultado" id="btn12">
+
+                <div>
+                    <p id="resultado12">Resultado </p>
+                </div>
+
+
+            </form>
+
+            <!--                  Ejercicio 13                       -->
+            <form>
+                <p> <b>Ejercicio 13:</b> Ingresar dos valores y una operación("S" suma, "R" resta, "M" multiplicacion, "D" division) y presionar un boton, al presionar el boton, dependiendo de la operacion ingresada al hacer el calculo
+                    correspondiente entre el primer valor y el segundo, mostrar el resultado.</p>
+
+				<hr>
+                <label>Ingresar 2 numeros para calcular </label>
+                <input type="number" placeholder="numero" id="num13a">
+                <input type="number" placeholder="numero" id="num13b">
+                <br />
+
+				<select id="num13c" name="opciones">
+                <option  value="Sumar"  >Sumar</option>
+                <option  value="Restar"  >Restar</option>
+                <option  value="Multiplicar"  >Multiplicar</option>
+                <option  value="Dividir"  >Dividir</option>
+				</select>
+				<input type="button" value=" Resultado" id="btn13">
+                <div>
+                    <p id="resultado13">Resultado </p>
+                </div>
+
+
+            </form>
+
+            <!--                  Ejercicio 14                       -->
+            <form>
+                <p> <b>Ejercicio 14:</b> Leer un caracter e indicar si es una vocal o no </p>
+
+				<hr>
+                <label for="num14">Ingresar una palabra</label>
+                <input type="text" placeholder="palabra" id="num14">
+                <input type="button" value=" resultado " id="btn14">
+
+
+                <div>
+                    <p id="resultado14">Resultado </p>
+                </div>
+
+
+            </form>
+
+			 <!--                  Ejercicio 15                      -->
+
+			<form>
+                <p> <b>Ejercicio 15:</b> Ingresar dos números y al presionar un botón indicar si el primero es múltiplo del segundo </p>
+
+				<hr>
+                <label for="num15a">Ingresar numeros</label>
+                <input type="number" placeholder="numero" id="num15a">
+				<input type="number" placeholder="numero" id="num15b">
+                <input type="button" value=" resultado " id="btn15">
+
+
+                <div>
+                    <p id="resultado15">Resultado </p>
+                </div>
+
+
+            </form>
+
+					 <!--                  Ejercicio 16                     -->
+
+			<form>
+                <p> <b>Ejercicio 16:</b> Utilizando un plan de viajero frecuente, un cliente de una aerolinea desea consultar donde puede viajar gratis con las millas acumuladas hasta el momento. </p>
+				<p>Las opciones son las siguientes:</p>
+				<p> 60.000 millas - Europa(destino lejano)</p>
+				<p> 30.000 millas - America del Norte(destino intermedio)</p>
+				<p> 15.000 millas - America del Sur(destino cercano)</p>
+				<p>Si el viajero es parte del plan "Plus" sus millas rinden el doble.</p>
+				<p>Dado un ingreso de millas acumuladas y el ingreso de si es parte del plan Plus(S-si,N-no),
+				indicarle al usuario cual es el destino más lejano al que puede viajar de manera gratuita, o indicarle que no dispone de millas suficientes
+				 en caso que no  alance los minimos.</p>
+				 <p>Ej: Tengo 17.000 millas y soy parte del plan plus - puedo viajar a América del Norte como destino más lejano.</p>
+				 <hr>
+                <label for="num16a">Ingresar millas</label>
+                <input type="number" placeholder="numero" id="num16a">
+				<label for="num16b">Plus?</label>
+				<select id="num16b" name="opciones">
+				<option value="si">Si</option>
+				<option value="no">No</option>
+				</select>
+
+                <input type="button" value=" resultado " id="btn16">
+
+
+                <div>
+                    <p id="resultado16">Resultado </p>
+                </div>
+
+
+            </form>
+
+
+			<!--                  Ejercicio 17                      -->
+
+			<form>
+                <p> <b>Ejercicio 17:</b> Ingresar un código de departamento y mostrar en un párrafo el nombre del departamento que le corresponde.</p>
+				<ul>
+				<li>A-Canelones</li>
+				<li>B-Maldonado</li>
+				<li>C-Rocha</li>
+				<li>D-Treinta y Tres</li>
+				<li>E-Cerro Largo</li>
+				<li>F-Rivera</li>
+				<li>G-Artigas</li>
+				<li>H-Salto</li>
+				<li>I-Paysandu</li>
+				<li>J-Rio Negro</li>
+				<li>K-Soriano</li>
+				<li>L-Colonia</li>
+				<li>N-San Jose</li>
+				<li>O-Flores</li>
+				<li>P-Lavalleja</li>
+				<li>Q-Durazno</li>
+				<li>R-Tacuarembo</li>
+				<li>S-Montevideo</li>
+
+				</ul>
+
+				<hr>
+                <label for="num17">Ingresar Matricula</label>
+                <input type="text" maxlength="7" placeholder="Matricula" id="num17">
+                <input type="button" value=" resultado " id="btn17">
+
+
+                <div>
+                    <p id="resultado17">Resultado </p>
+                </div>
+
+
+            </form>
+
+			<!--                  Ejercicio 18                       -->
+            <form>
+                <p> <b>Ejercicio 18:</b> Escribir una expresion condicional equivalente,
+				sin la utilizacion de condicionales if anidados(utilizar un solof if). </p>
+				<code>
+				if(a>b){
+				<br>
+				{
+				if(a>c){
+				<br>
+
+				$("#parrafo").html("a es el mayor de los tres");
+				<br>
+				}
+				}
+
+
+				</code><br />
+				<hr>
+                <label for="num18a">Número a </label>
+                <input type="number" placeholder="66" value="66" id="num18a">
+				<br />
+				<label for="num18b">Número b</label>
+                <input type="number" placeholder="25"  value="25" id="num18b">
+				<br />
+				<label for="num18c">Número c</label>
+                <input type="number" placeholder="44"  value="44" id="num18c">
+
+                <input type="button" value=" resultado" id="btn18">
+                <div>
+                    <p id="resultado18a">Resultado</p>
+					<p id="resultado18b">
+					<code>
+						if(num18a > num18b && num18a > num18c){
+						<br>
+			resultado18 = num18a += " es el mayor de los tres";
+			<br>
+		}else if(num18b > num18a && num18b > num18c){
+		<br>
+			resultado18 = num18b += " es el mayor de los tres";
+			<br>
+		}else if(num18c > num18a && num18c > num18b){
+		<br>
+			resultado18 = num18c += " es el mayor de los tres";
+			<br>
+		}else{
+		<br>
+			resultado18 = " Ingresa numeros diferentes.";
+
+		}
+</code>
+
+				</p>
+                </div>
+
+            </form>
+
+
+			<!--                  Ejercicio 19                      -->
+
+			<form>
+                <p> <b>Ejercicio 19:</b> Escribir una expresión condicional equivalente a la que se muestra, sin la utilización de condicionales if consecutivos </p>
+			<code>
+			(Utilizar un solo if)
+			<br />
+				if(a < 0){
+				<br />
+				$("#parrafo").html(" a esta fuera de rango");
+				}
+				<br />
+				 else if(a > 10){
+				<br />
+
+				$("#parrafo").html("a esta fuera de rango");
+				<br />
+				}
+
+				</code><br />
+				<hr>
+                <label for="num19">Ingresar numero</label>
+                <input type="number" placeholder="numero" min="1" required id="num19">
+                <input type="button" value=" resultado " id="btn19">
+
+
+                <div>
+                    <p id="resultado19a">Resultado </p>
+					<p id="resultado19b">
+					<code>
+						  if (num19 > 0 && num19 < 10) {
+						<br>
+			     resultado19 = num19 += "  esta dentro del rango";
+			<br>
+   }else{
+		<br>
+				resultado19 = num19 += " 	 esta fuera del rango";
+			<br>
+		};
+					</code>
+					</p>
+                </div>
+
+
+            </form>
+
+
+			 <!--                  Ejercicio 20                      -->
+
+			<form>
+                <p> <b>Ejercicio 20:</b> Ingresar seis valores y retornar la suma total del valor absoluto de cada uno</p>
+
+				<hr>
+                <label for="num20">Ingresar numeros</label>
+                <input type="number"  placeholder="numero" id="num20">
+                <input type="button"  value="resultado"    id="btn20">
+
+
+                <div>
+                    <p id="resultado20a">Números </p>
+					<p id="resultado20b">Resultado </p>
+                </div>
+
+
+            </form>
+
+			 <!--                  Ejercicio 21                      -->
+
+			<form>
+                <p> <b>Ejercicio 21:</b> Ingresar cinco números.
+				Indicar cuantos son multiplos de 5,
+				 cuantos son mayores que 20 y cuantos cumplieron ambas condiciones en simultaneo.</p>
+
+				<hr>
+                <label for="num21">Ingresar numeros</label>
+                <input type="number"  placeholder="numero" id="num21">
+                <input type="button"  value="resultado"    id="btn21">
+
+
+                <div>
+                    <p id="resultado21a">Números </p>
+					<p id="resultado21b">Mayores de 20: </p>
+					<p id="resultado21c">Multiplos de 5:  </p>
+					<p id="resultado21d">Cumplen Ambas Condiciones: </p>
+                </div>
+
+
+            </form>
+			 <!--                  Ejercicio 22                       -->
+            <form>
+                <p> <b>Ejercicio 22:</b>Para elaborar galletas se necesita 1 taza de azucar (250gr),
+				100gr. de harina, 1 cuchara de aceite(50ml) y una taza de agua(250ml).
+				Pedirle al usuario ingrese la cantidad de ingredientes disponibles e informarle cuantas galletas podrá elaborar.
+				Se debe tener en cuenta que se podrán hacer tanta recetas como las que permita el ingrediente que esté en menor cantidad.</p>
+
+				<hr>
+                <label for="num22a">Ingrese Azucar en gramos</label>
+                <input type="number" placeholder="250" id="num22a">
+				<br />
+				<label for="num22b">Ingrese harina en gramos</label>
+                <input type="number" placeholder="100" id="num22b">
+				<br />
+				<label for="num22c">Ingrese aceite en mililitros </label>
+                <input type="number" placeholder="50" id="num22c">
+				<br />
+				<label for="num22d">Ingrese agua en mililitros</label>
+                <input type="number" placeholder="250" id="num22d">
+				<br />
+                <input type="button" value=" resultado " id="btn22">
+
+
+                <div>
+				 <p id="resultado22a">Cantidad </p>
+                 <p id="resultado22b">Necesita </p>
+
+                </div>
+
+
+            </form>
+
+
+					 <!--                  Ejercicio 23                      -->
+
+			<form>
+                <p> <b>Ejercicio 23:</b> Una empresa de bienes raices ofrece casas de interés social,
+				bajo las siguientes condiciones:
+				Si los ingresos del comprador son menores de $20.000 el primer pago será del 15% de costo de la casa y el resto se distribuirá en 2 pagos.
+				Para los ingresos del comprador que son de $20.000 o más la cuota inicial será del 30% de costo de la casa y el resto se destribuía en pagos mensaules a pagar en 7 años.
+				La empresa quiere obtener cuánto debe pagar un comprador por concepto del primer pago y cuánto por cada pago parcial.</p>
+
+				<hr>
+                <label for="num23a">Costo de la Casa </label>
+                <input type="number"  placeholder="Precio de la casa" id="num23a" required>
+
+				<label for="num23b">Ingreso mensual del Comprador</label>
+                <input type="number"  placeholder="Sueldo neto" id="num23b" required>
+
+                <input type="button"  value="Calcular"    id="btn23">
+
+
+                <div>
+                    <p id="resultado23a">Porcentaje:</p>
+					<p id="resultado23b">Cantidad de Cuotas:</p>
+					<p id="resultado23c">Primer Pago: </p>
+					<p id="resultado23d">Pago Parcial:</p>
+					<p id="resultado23e">Total:</p>
+                </div>
+
+
+            </form>
+
+								 <!--                  Ejercicio 24                     -->
+
+			<form>
+                <p> <b>Ejercicio 24:</b> Una nueva ley descuenta un 4% al total de cada compra si el pago se efectúa con tarjeta de crédito o débito y el monto es inferior a los $10000.
+					   Dado un ingreso de total de compra y si es con tarjeta ("si" o "no"),
+					   calcular el total final de la compra.
+					   <br />
+					   Ej:
+					   <br />
+					   Pago de $2000 con tarjeta, costo final -> $1920
+					   <br />
+					   Pago de $12000 con tarjeta, costo final -> $12000
+					   <br />
+					   Pago de $3000 sin tarjeta, costo final -> $3000
+					   </p>
+
+				<hr>
+                <label for="num24">Monto</label>
+                <input type="number"  placeholder="Precio de la casa" id="num24" required>
+				<label for="num24a">Tarjeta de Crédito</label>
+				<select id="num24a" name="opciones">
+				<option value="con">Con</option>
+				<option value="sin">Sin</option>
+                </select>
+                <input type="button"  value="Calcular"    id="btn24">
+
+
+					    <div>
+                    <p id="resultado24a">Pago:</p>
+					<p id="resultado24b">Targeta:</p>
+					<p id="resultado24c">Costo Final: </p>
+
+                </div>
+
+
+
+            </form>
+
+
+				 <!--                  Ejercicio 25                      -->
+
+			<form>
+                <p > <b>Ejercicio 25:</b>Programar un sistema que administrará pedidos de compras de cámaras fotográficas.
+					Al inicio de la aplicación se ingresa el stock inicial de cámaras disponbles para la venta.
+					A continuación se comienzan a recibir solicitudes de pedidos del producto.
+					El cliente ingresará su nombre y a continuación la cantidad de unidades que desea.
+					Mientras haya stock disponible se seguirán procesando solicitudes.
+					Si el pedido supera la cantidad de stock disponible restante, se deberá informar del problema y esa solicitud no se tendrá en cuenta.
+					Al vaciar el stock, deshabilitar el botón de compra.
+					Informar el nombre del cliente que compró más cantidad de cámaras en un pedido.
+					Informar la cantidad de pedidos qeu se procesaron en total.</p>
+
+				<hr>
+                <label for="num25a">Stock de Camaras </label>
+                <input type="number"  placeholder="Stock" id="num25a" required>
+
+
+				<label for="num25b">Nombre</label>
+                <input type="text"  placeholder="Usuario" id="num25b" required>
+				<label for="num25c">Pedidos</label>
+                <input type="number"  placeholder="Cantidad" id="num25c" required>
+
+                <input type="button"  value="Comprar"    id="btn25">
+
+
+                <div>
+                    <p id="resultado25a">Stock:</p>
+					<p id="resultado25b">Compradores:</p>
+					<p id="resultado25c">Cantidad de Compras:</p>
+					<p id="resultado25d">Mayor Comprador: </p>
+					<p id="resultado25e">Sobre el programa: </p>
+                </div>
+
+
+            </form>
+			 <!--                                          Ejercicio 26                      -->
+			<form>
+			<p><b>Ejercicio 26:</b>Un hotel tiene una promoción. Si el cliente se hospeda por un mínimo de 3 noches, recibe una noche de alojamiento de regalo.
+				Si se hospeda por 7 noches o más recibe dos noches de alojamiento de regalo, pero ademas si paga con tarjeta de crédito en este último caso se le regala la tercera noche de alojamiento.
+				<br />
+				El costo de cada noche de alojamiento es de $40.
+				<br />
+				Dado un ingreso de cantidad de noches a alojarse y medio de pago (e-efectivo, t-tarjeta), indicarle al usuario cuantas noches son las que tiene de regalo,
+				cuantos son los días que se va a poder alojar en total y cuál es el momento final a pagar.
+				Se deben contemplar todos los casos, incluso los que no generan días gratis.
+				<br />
+				Ej: 9 noches pagadas con tarjeta -> hay 3 noches de regalo, el usuario se hospeda 12 noches, el costo total son $360</p>
+			<hr>
+			<label for="num26a"> Cantidad de noches</label>
+			<input type="number"  placeholder="cantidad"  id="num26a" required>
+			<label for="num26b">Tarjeta?</label>
+			<select id="num26b" name="opciones">
+				<option value="tarjeta" >Targeta</option>
+				<option value="efectivo" >Efectivo</option>
+			</select>
+			<input type="button"  value="Calcular"    id="btn26">
+
+			<div>
+			<p id="resultado26a">Precio Total:    </p>
+			<p id="resultado26b">Medio de pago:    </p>
+			<p id="resultado26c">Cantidad de Noche: </p>
+			<p id="resultado26d">Noches de Regalo: </p>
+			<p id="resultado26e">Noches se Hospeda: </p>
+
+			</div>
+
+			</form>
+
+			 <!--                                          Ejercicio 27                      -->
+			<form>
+			<p><b>Ejercicio 27:</b>Implementar un programa que permita jugar al siguiente juego:
+			<br />
+			Se trata de un juego entre dos jugadores.Consiste en adivinar el número que el otro jugador ingresa.
+			El jugador 1 ingresa un número, luego el sistema le pide al jugador 2 que ingrese números hasta que adivine el número que el jugador 1 ingresó.
+			Se va contando la cantidad de intentos que realiza el jugador hasta adivinar el número.
+			Los numeros a adivinar siempre están entre 1 y 100. A modo de ayuda el sistema da pistas en funcion a la cercanía entre el número ingresado y el número a adivinar.
+			Si el numero ingresado está a una distancia  > 15 el sistema despliega el texto "estas lejos". Si el numero ingresado esta a una distancia entre 10 y 15 el sistema despliega el texto "te estas acercando".
+Si la distancia es entre 5 y 9 el sistema despliega el texto "cada vez mas cerca".Si la distancia es entre 1 y 4 se despliega el texto "muy pero muy cerca".
+<br />
+Ej: Si el numero a adivinar es el 86 y el jugador ingresa el 91 el texto que se despliega es "cada vez mas cerca".
+<br />
+Al finalizar mostrar la cantidad de intentos que llevó adivinar el número.	</p>
+<hr>
+			<label  class="num27a " for="num27a"> Jugador 1: Selecciona el numero a Adivinar</label>
+			<input type="number"  placeholder="1 al  100"   min="0" max="100"  class="num27a " id="num27a" required>
+			<input type="button"  value="Seleccionar"  class="num27a "  id="btn27a">
+			<br />
+			<label for="num27b" class="num27b " > Jugador 2: Adivina el numero</label>
+			<input type="number"  placeholder="1 al  100"    min="0" max="100"  class="num27b "  id="num27b" required>
+			<input type="button"  value="Intentar" class="num27b "    id="btn27b">
+			<div>
+			<p  id="resultado27a"> Cual es el numero?  </p>
+			<p class="res27"  id="resultado27b"> Cantidad de intentos: </p>
+			<p class="res27" id="resultado27c">  Numero del 1 al 100.  </p>
+			<p class="res27" id="resultado27d"> Numeros Elegidos: </p>
+			<!-- <p class="res27" id="resultado27e"> prueba </p> -->
+
+
+			</div>
+
+			</form>
+
+
+			<!--                  Ejercicio 28                      -->
+
+			<form>
+                <p > <b>Ejercicio 28:</b>Programar un sistema que servirá para llevar puntajes en un juego de cartas
+
+				Para cada mano se ingresrá el puntaje obtenido por cada equipo, siendo dos los equipos que participaran del juego.
+				En cada mano se debe mostrar en pantalle el puntaje total actualizado de cada equipo.
+				<br />
+
+				Se seguirán solicitando ingresos de puntajes de los dos equipos hasta que alguno de los equipos totalice 30 puntos, en ese momento se deben mostrar los totales finales y deshabilitar el botón de ingreso de datos.</p>
+
+				<hr>
+                <label for="num28">Ingresar Puntos </label>
+                <input type="number" class="input" placeholder="equipoB"  min="1" max="101" id="num28a"   required>
+
+                <input type="button"  value="Ingresar Puntos"  id="btn28">
+
+
+                <div>
+				<table border="2">
+				<tr>
+				<th >EQUIPO A:</th>
+				<th >EQUIPO B:</th>
+
+				</tr>
+				<tr>
+				<td><p id="resultado28a"></p></td>
+				<td><p id="resultado28b"></p></td>
+				</tr>
+				</table>
+
+
+
+                </div>
+
+
+            </form>
+
+
+			<!--                  Ejercicio 29 y 30                     -->
+
+			<form>
+                <p > <b>Ejercicio 29:</b>Crear un juego de Ta-Te-Ti.Al jugador 1 le corresponderá la imagen de la cruz y al 2 la del círculo.
+				<br />
+				<b>Ejercicio 30:</b>Crear un juego de Ta-Te-Ti, donde cada jugador pueda seleccionar el diseño de la pieza con la que va jugar de una serie de opciones disponibles.
+			     </p>
+
+				<hr>
+
+
+			<input type="button" id="btn29a" value="Jugar">
+			<input type="button" id="btn29b" value="Cerrar">
+
+         <table  class="tateti">
+            <tr><td><img src="blanco.png" alt="" id="pos1"/></td>
+                <td><img src="blanco.png" alt="" id="pos2"/></td>
+                <td><img src="blanco.png" alt="" id="pos3"/></td>
+            </tr>
+            <tr><td><img src="blanco.png" alt="" id="pos4"/></td>
+                <td><img src="blanco.png" alt="" id="pos5"/></td>
+                <td><img src="blanco.png" alt="" id="pos6"/></td>
+            </tr>
+            <tr><td><img src="blanco.png" alt="" id="pos7"/></td>
+                <td><img src="blanco.png" alt="" id="pos8"/></td>
+                <td><img src="blanco.png" alt="" id="pos9"/></td>
+            </tr>
+        </table>
+        <div class="tateti">
+            <p id="pRes"></p>
+        </div>
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Ends documents-->
+
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/practico2.js"></script>
+
+    </body>
+
+</html>

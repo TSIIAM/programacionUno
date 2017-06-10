@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico 6</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/practico6.css">
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+  
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Ejercicios de Practico 6</h1>
+			<div class="loader"></div>
+			<div class="loader2"></div>
+			<div class="loader3"></div>
+			<div id="tempo"></div>
+		</div>
+
+	
+
+		<h2>Arrays indexados|Vectores</h2>
+        <h4>Un click en boton de ejercicio para abrir y cerrar el ejercicio.</h4>
+		
+		<!-- ***************************************************************************************************** -->
+        <!--Ejercicio 1 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 1"> <p>Una empresa necesita almacenar los alias (nombres de usuario) de red de sus empleados.
+			Debe poder acceder a ellos en forma independiente.Declarar las variables necesarias, e implementar el ingreso de los datos.</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>Modificar lo anterior para que los nombres no se repitan.</p></div>
+
+			<hr>
+			<label  for="in1A" >Nombre</label>
+			<input type="text"  class="form-control" id="in1A">
+			<br >
+			<label  for="in1B" >Apellido</label>
+			<input type="text"  class="form-control" id="in1B">
+			<br >
+			<label  for="in1C" >Alias</label>
+			<input type="text"  class="form-control" id="in1C">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn1">
+
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error1"></p>
+                <p class="panel panel-default resultado"  id="resultado1A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		    <!--Ejercicio 2 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 2"> <p>Realizar una función que reciba un array que contiene strings.
+			Retornar un nuevo array numérico cuyos elementos sean los largos de los strings del array original.</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>Ejemplo: si el array original recibido contenia ["Hola","celular","ser","exige"] se retornara [4,7,3,5].</p></div>
+
+			<hr>
+			<label  for="in2A" >Texto</label>
+			<input type="text"  class="form-control" id="in2A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn2">
+
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error2"></p>
+                <p class="panel panel-default resultado"  id="resultado2A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		  <!--Ejercicio 3 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 3"> <p>Ingresar valores  numéricos en un array de un campo de texto y un botón.
+			Presionando otro botón mostrar en pantalla el mayor número.</p>
+			<article class="ejercicio" >
+					
+
+
+			<hr>
+			<label  for="in3A" >Numeros</label>
+			<input type="number"  class="form-control" id="in3A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn3a">
+			<input type="button"  class="form-control" value="Mostrar" id="btn3b">
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error3"></p>
+                <p class="panel panel-default resultado"  id="resultado3A"></p>
+				
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		  <!--Ejercicio 4 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 4"> <p>Ingresar palabras e ir incorporándolas a un array indexado mediante un botón.
+			Para finalizar otro botón y mostrar un listado con todas las palabras almacenadas en ese array.</p>
+			<article class="ejercicio" >
+			
+
+			<hr>
+			<label  for="in4A" >Palabras</label>
+			<input type="text"  class="form-control" id="in4A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn4a">
+			<input type="button"  class="form-control" value="Mostrar" id="btn4b">
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error4"></p>
+                <p class="panel panel-default resultado"  id="resultado4A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		 <!--Ejercicio 5 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 5"> <p>Ingresar números e ir incorporándolos a un array indexado mediante un botón.
+			Para finalizar presionar otro botón y calcular el promedio de todos los números ingresados.</p>
+			<article class="ejercicio" >
+			
+
+			<hr>
+			<label  for="in5A" >Numeros</label>
+			<input type="number"  class="form-control" id="in5A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn5a">
+			<input type="button"  class="form-control" value="Promedio" id="btn5b">
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error5"></p>
+                <p class="panel panel-default resultado"  id="resultado5A"></p>
+				
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		 <!--Ejercicio 6 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 6"> <p>Crear una función que reciba como parámetro un array con valores numéricos y devuelva un nuevo array solamente con los valores mayores a 20.
+			
+			</p>
+			<article class="ejercicio" >
+			
+
+			<hr>
+			<label  for="in6A" >Numeros</label>
+			<input type="number"  class="form-control" id="in6A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn6a">
+			<input type="button"  class="form-control" value="Ingresar" id="btn6b">
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error6"></p>
+                <p class="panel panel-default resultado"  id="resultado6A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		<!--Ejercicio 7 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 7"> <p>Crear un array llamado nombres, con los elementos "Ana", "Lucia", "Maria".</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p><ol>
+			<li>Agregar al final el elemento "Juan".</li>
+			<li>Mostrar el largo del array.</li>
+			<li>Mostrar el elemento en la posición 1.</li>
+			<li>Mostrar el elemento en la posición correspondiente al largo menos uno.</li>
+			<li>Mostrar cada uno de los elementos en un renglón.</li>
+			<li>Pedir un nombre e indicar si está  en el array.</li>
+			<li>Pedir un nombre e indicar  la posición en el array, -1 si no está.</li>
+			<li>Pedir un nombre, y si el nombre está en el array pedir un nuevo nombre y modificar el original.Por ejemplo, si el nombre pedido inicialmente es Ana, y el nuevo nombre es Anita,
+			el array quedara ["Anita","Lucia","Maria","Juan"].</li>
+			</ol></p></div>
+
+			<hr>
+			<label  for="in7A" >Nombre</label>
+			<input type="text"  class="form-control" id="in7A">
+			<input type="button"  class="form-control" value="Buscar" id="btn7a">
+			<br >
+
+            
+			
+
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error7"></p>
+                <p class="panel panel-default resultado"  id="resultado7A"></p>
+				<p class="panel panel-default resultado"  id="resultado7B"></p>
+				
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+				 <!--Ejercicio 8 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 8"> <p>Partiendo de un array que contenga los valores 1 y 1 en las primeras dos posiciones,
+			complementar el array hasta la posición 20 con los números de la sucesión de Fibonacci.
+			1,1,2,3,5,8,13,21,34,55,89,144,233,377...<br>
+			Recorrer y mostrar el array resultante.</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>La sucesión comienza con los números 1 y 1,1 y a partir de estos, << cada término es la suma de los dos anteriores >>. </p></div>
+
+			<hr>
+			<label  for="in8A" >Cantidad de Sucesiones</label>
+			<input type="number"  class="form-control" id="in8A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn8">
+
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error8"></p>
+                <p class="panel panel-default resultado"  id="resultado8A"></p>
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		 <!--Ejercicio 9 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ejercicio 9"> <p>Partiendo de un array que contenga los valores 1 y 1 en las primeras dos posiciones,
+			completar el array con la secuencia de Fibonacci hasta que el último valor almacenado sea mayor a 1000, en ese momento se debe detener el programa.
+			<br>
+			Recorrer y mostrar el array resultante.
+			</p>
+			<article class="ejercicio" >
+			
+
+			<hr>
+			<label  for="in9A" >Maximo</label>
+			<input type="number"  class="form-control" id="in9A">
+			<br >
+
+            <input type="button"  class="form-control" value="Ingresar" id="btn9">
+
+
+            <div class="text-center">
+				<p class="panel panel-default error" id="error9"></p>
+                <p class="panel panel-default resultado"  id="resultado9A"></p>
+				
+            </div>
+			</article>
+        </form>
+		<!-- ***************************************************************************************************** -->
+		
+		
+		
+		
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funciones6.js"></script>
+			<script src="../js/validar6.js"></script>
+            <script src="../js/practico6.js"></script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Asistente al Profesor </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link  rel="stylesheet"  href="notas.css">
+    </head>
+    <body>
+	<h1> Asistencia al Profesor </h1>
+	
+	 <!--                  Ejercicio 10                     -->
+	 <form>
+	<p> <b class="sin-Terminar")>Asistente de pruebas:</b>  Se ingresan las notas de examen de un grupo de estudiantes.
+	Luego de finalizado el ingreso mostrar cuantos perdieron(<70), 
+	cuantos salvaron, y cuantos sacaron una muy buena nota(>90).
+	<br />
+	A su vez indicar cual fue es el promedio de notas,  cual fue la nota máxima y cuál fue la nota mínima.</p>
+	
+                       
+            <label>Ingresar la nota </label>
+            <input type ="number"   min ="1" max="100" placeholder=" 1 a 100" id="num10" >
+             <input type ="button" value = "Resultado"  id="btn10" >
+			<div> <p>  <b> El Resultado </b>  <span id="resultado10">  </span>   </p></div>
+<hr />
+		<div> <p> <b> Las Notas son </b> <span id="resultado10a">  </span>   </p></div>
+
+		<div> <p> <b> Cantidad de resultados </b> <span id="resultado100">  </span>   </p></div>
+<hr />
+		<div> <p>  <b>El Promedio  es </b> <span id="resultado101">  </span>   </p></div>
+		<div> <p>  <b>Aprueban </b> <span id="resultado10b">  </span>   </p></div>
+		<div> <p>  <b>Reprueban </b> <span id="resultado10c">  </span>   </p></div>
+		
+		<hr />
+		<div> <p>  <b>La Maxima nota es </b> <span id="resultado102">  </span>   </p></div>
+		<div> <p>  <b>La Minima nota  es </b> <span id="resultado103">  </span>   </p></div>
+	 </form>
+	 
+	 <script src="notas.js"></script>
+    </body>
+</html>

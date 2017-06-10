@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practico prueba</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="../css/prueba.css">
+	<meta name="description" content="Junior Web Developer Pedido De Productos">
+    <meta name="keywords" content="HTML,CSS/Bootstrap,JavaScript/jQuery">
+    <meta name="author" content="Alvaro Mesa">
+
+</head>
+    <body>
+	<!--Comienzan ejercicios-->
+  <div class="loader"></div>
+	<section class="page">
+
+
+		<div class="head">
+			<h1> Ejercicio de prueba</h1>
+		</div>
+
+
+
+		<h2>Pedido de Productos</h2>
+        <h4>Un click en boton  para abrir y cerrar el pedido.</h4>
+		<!-- ***************************************************************************************************** -->
+        <!--Ejercicio 1 -->
+        <form  class="ejer">
+            <input type="button" class="ejerbtn"  value="Ingresar "> <p>Una empresa vende tres clases de productos aromatizantes: Pino, Lavanda y Floral.
+Todos los productos tienen el mismo precio de venta al público de $ 78. Los aromatizantes de Pino, cuando se compra más de 5 unidades, tienen un descuento del 13%, y los de Lavanda tienen un descuento del 6%..</p>
+			<article class="ejercicio" >
+			<div class="alert-info"><p>1) Crear una aplicación que lea un tipo de producto entre Pino, Lavanda y Floral, y una cantidad comprada y calcule el costo de esa venta. Notar que hay que aplicar el IVA al subtotal.</p></div>
+			<div class="alert-info"><p>2) Sobre la misma aplicación anterior, crear un botón que permita ver el total vendido por artículo, mostrandolo en forma de tabla.</p></div>
+
+			<hr>
+			<select  class="form-control"   name="selProducto" id="in1A">
+			<option selected="selected" value="empty">Sel. Producto</option>
+				<option value="Pino">Pino</option>
+				<option value="Lavanda">Lavanda</option>
+				<option value="Floral">Floral</option>
+			</select>
+			<label for="in1B" >Cantidad</label>
+			<input type="number"  class="form-control" id="in1B">
+			<br >
+
+            <input type="button"  class="form-control" value="Resultado" id="btn1">
+
+
+            <div class="text-center">
+				<p class="panel panel-default resultado" class="resultado" id="error"></p>
+                <p class="panel panel-default resultado" class="resultado" id="resultado1"></p>
+				<p class="panel panel-default resultado" class="resultado" id="resultado2"></p>
+            </div>
+			</article>
+        </form>
+		
+
+
+			 <!--Ends section-->
+
+			</section>
+
+
+
+
+            <!--Terminan ejercicios-->
+
+            <script src="../js/jquery.min.js"></script>
+			<script src="../js/funcionesprueba.js"></script>
+			<script src="../js/validarprueba.js"></script>
+            <script src="../js/practicoprueba.js"></script>
+
+
+
+    </body>
+
+</html>
